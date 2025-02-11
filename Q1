@@ -1,0 +1,20 @@
+import java.util.*;  //Q1
+class q1
+{
+	public static void main(String args[])
+	{
+		Scanner A = new Scanner(System.in);
+		System.out.println("Enter Name - ");
+		String n = A.next();
+		System.out.println("Enter University R.no. - ");
+		int ur = A.nextInt();
+		System.out.println("Enter Course - ");
+		String cr = A.next();
+		System.out.println("Enter Semester - ");
+		int s = A.nextInt();
+		System.out.println("Name - "+ n);
+		System.out.println("University R.no. - "+ ur);
+		System.out.println("Course - "+ cr);
+		System.out.println("Semester - "+ s);
+	}
+}
