@@ -1,0 +1,29 @@
+import java.util.*;	//Q3
+
+class q3
+{
+	public static void main(String args[])
+	{
+		Scanner A = new Scanner(System.in);
+		System.out.println("Enter First Number - ");
+		int n1 = A.nextInt();
+		System.out.println("Enter Second Number - ");
+		int n2 = A.nextInt();
+		int s1=0;
+		int s2=0;
+		for(int i=0;i<=n1;i++)
+		{
+			if(i%n1==0)
+				s1+=i;
+		}
+		for(int i=0;i<=n2;i++)
+		{
+			if(i%n2==0)
+				s2+=i;
+		}
+		if((s1/n1)==(s2/n2))
+			System.out.println("Numbers are a FRIENDLY pair");
+		else
+			System.out.println("Numbers are not a FRIENDLY pair");	
+	}
+}
