@@ -1,0 +1,38 @@
+import java.util.*;	//Q2
+class q2
+{
+	public static void main(String args[])
+	{
+		Scanner A = new Scanner(System.in);
+		System.out.println("Enter '1' for TERM DEPOSIT, Enter '2' for RECURRING DEPOSIT - ");
+		int c = A.nextInt();
+		switch(c)
+		{
+			case 1:
+			System.out.println("Enter Principal - ");
+			int p = A.nextInt();
+			System.out.println("Enter Rate - ");
+			double r = A.nextDouble();
+			System.out.println("Enter Time - ");
+			int t = A.nextInt();
+			double a = p*(1+(r/100))*t;
+			System.out.println("Maturity Amount = "+a);
+			break;
+
+			case 2:
+			System.out.println("Enter Monthly Installent - ");
+			int mi = A.nextInt();
+			System.out.println("Enter Rate - ");
+			double ra = A.nextDouble();
+			System.out.println("Enter Time (in months) - ");
+			int tm = A.nextInt();
+			double am = mi*tm+mi*tm*(tm+1)/2*ra/100*1/12;
+			System.out.println("Maturity Amount = "+am);
+			break;
+
+			default:
+			System.out.println("Invalid Choice");
+			break;
+		}
+	}
+}
