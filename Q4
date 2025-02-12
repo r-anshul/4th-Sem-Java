@@ -5,7 +5,7 @@ class q4
 	public static void main(String args[])
 	{
 		Scanner O = new Scanner(System.in);
-		System.out.println("Enter String of numbers - ");
+		System.out.println("Enter Number - ");
 		String num = O.next();
 		int l = num.length();
 		char[] A = new char[l];
@@ -16,7 +16,7 @@ class q4
 			if(A[i]=='0')
 				A[i]='1';
 		}
-		System.out.println("New string number - ");
+		System.out.println("Changed number - ");
 		for(int i=0;i<l;i++)
 		{
 			System.out.print(A[i]);
