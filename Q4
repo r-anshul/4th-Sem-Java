@@ -1,0 +1,26 @@
+import java.util.*;	//Q4
+import java.io.*;
+class q4
+{
+	public static void main(String args[])
+	{
+		Scanner O = new Scanner(System.in);
+		System.out.println("Enter String of numbers - ");
+		String num = O.next();
+		int l = num.length();
+		char[] A = new char[l];
+		for(int i=0;i<l;i++)
+			A[i]=num.charAt(i);
+		for(int i=0;i<l;i++)
+		{
+			if(A[i]=='0')
+				A[i]='1';
+		}
+		System.out.println("New string number - ");
+		for(int i=0;i<l;i++)
+		{
+			System.out.print(A[i]);
+		}
+		System.out.println();
+	}
+}
