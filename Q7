@@ -1,0 +1,32 @@
+import java.util.*;
+class q7
+{
+    public static void main(String[] args)
+    {
+        int te,n,i,j;
+        int mr=0,mc=0;
+        Scanner O = new Scanner(System.in);
+        System.out.println("Enter size - ");
+        n = O.nextInt();
+        int A[][] = new int[n][n];
+        System.out.println("Enter Elements - ");
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                A[i][j] = O.nextInt();
+            }
+        }
+        for(i=0;i<n;i++)
+        {
+                if(A[i][0]>A[mr][0])
+                    mr=i;
+        }
+        for(i=0;i<n;i++)
+        {
+            if(A[mr][i]<A[mr][mc])
+                mc = i;
+        }
+            System.out.println("Pivot Element -  "+A[mr][mc]);
+    }
+}
