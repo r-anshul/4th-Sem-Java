@@ -1,0 +1,42 @@
+import java.util.*;  //q8
+
+class q8
+{
+	public static void main(String args[])
+	{
+		int i,j,n,o=0,c=0;
+		Scanner O = new Scanner(System.in);
+		System.out.println("Enter Size - ");
+		n = O.nextInt();
+		int A[] = new int[n];
+		System.out.println("Enter elements (0s & 1s) - ");
+		for(i=0;i<n;i++)
+		{
+			A[i]=O.nextInt();
+		}
+		for(i=0;i<n;i++)
+		{
+			if(A[i]==0)
+			{
+				c++;
+				if(i<0&&i>n-1)
+				{
+				if(A[i-1]==0||A[i+1]==0)
+					o++;
+				}
+				if(i==0)
+				{
+					if(A[i+1]==0)
+					o++;
+				}
+				if(i==n-1)
+				{
+					if(A[i-1]==0)
+					o++;
+				}
+			}
+		}
+		c-=o;
+		System.out.println("Count - " + --c);
+	}
+}
