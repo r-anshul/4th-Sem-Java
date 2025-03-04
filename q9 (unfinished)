@@ -1,0 +1,30 @@
+import java.util.*;
+class Bank
+{
+	private:
+		String n;
+		String add;
+		int acn;
+		double bal;
+	public:
+		int generate(int un)
+		{
+			return un++;
+		}
+		void dis(Bank O)
+		{
+			System.out.println("Name -"+O.n+"\nAddress - "+O.add+"\nAccount Number - "+O.acn+"\nBalance - "+O.bal);
+		}
+		void dep(Bank O,int a)
+		{
+			O.amt+=a
+		}
+		void wit(Bank O,int a)
+		{
+			O.amt-=a
+		}
+		void chg(Bank O,String ad)
+		{
+			O.add = ad;
+		}
+}
