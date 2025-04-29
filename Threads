@@ -1,0 +1,18 @@
+class TotalEarning extends Thread
+{
+    int t = 0;
+    public void run()
+    {
+        for (int i = 1; i <= 5; i++)
+            t += 100;
+    }
+}
+class Main
+{
+    public static void main(String[] args) throws InterruptedException {
+        TotalEarning te = new TotalEarning();
+        te.start();
+        te.join();
+        System.out.println("Total - " + te.t);
+    }
+}
